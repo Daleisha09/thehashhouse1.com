@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Link the necessary Bootstrap CSS files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="../css/Style.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Link to font awesome CSS icon library -->
+  <link rel="stylesheet" href="assets/assets/css/all.css">
+
+  <title>The Hash House Sign Up Page</title>
+</head>
+
+<body>
+  
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <div class="lgpic">
+        <img src="images/Logos/Black_Logo-removebg-preview.png" class="lgsize" alt="Site Logo" title="Site Logo"/>
+      </div>
+      <ul class="pnav"> <!-- Nav Row -->
+        <li><a href="Index.html"target="_blank">HOME</a></li> 
+            <li><a href="Shop Now.html"target="_blank">SHOP NOW</a></li> 
+            <li><a href="About Us.html"target="_blank">ABOUT US</a></li>  
+            <li><a href="Services.html"target="_blank">SERVICES</a></li> 
+            <li><a href="Sign Up.html"target="_blank">SIGN UP</a></li> 
+            <li><a href="Contact Us.html"target="_blank">CONTACT US</a>
+      </ul>
+    </nav>
+  </div>
+
+    <div class="login-wrapper">
+        <div class="login-header">
+          <h2>Sign Up for newsletter</h2>
+          <!-- <span class="close-btn" style="cursor: pointer;position: absolute;right: 20px;" onclick="closeLogin()"><h2>&times;</h2></span> -->
+        </div>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Create password" required>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Confirm password" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Sign Up Now">
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div class="row tspacer text-center">
+          <div class="col-sm-4 text-center" >
+          <img src="images/chef hat.jpg" height="100px" width="100px">
+          </div>
+       
+       
+          <div class="col-sm-4"> 
+            <h2>Follow Us</h2>
+            <p><i class="fa-brands fa-instagram"></i>
+            Instagram: the_hash_house <br/>
+            <i class="fa-brands fa-facebook"></i>
+            Facebook: thehashhouse <br/>
+            <i class="fa-brands fa-tiktok"></i>
+            TikTok: the_hash_house <br/>
+            <i class="fa-brands fa-twitter"></i>
+            Twitter: thehashhouse <br/>
+          </p>
+          </div>
+      
+          <div class="col-sm-4"> 
+            <h2>Site Links</h2>
+            <p>
+              <a href="#about">About Us</a> <br/>
+              <a href="#services">Services</a> <br/>
+              <a href="#contact">Contact Us</a> <br/>
+              <a href="#shop">Shop Now</a> <br/>
+      
+          </p>
+        </div>
+      </div>
+      
+      <div class="row tspacer text-center">
+        <div class="col-sm-12 text-center" >
+           <p>&copy; Copyright 2024  The Hash House, TT</p>
+        </div>
+      </div>
+      </footer>
+
+
+<!-- Provide the links to the JS files --> 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    function Signup(){
+      let login = document.getElementsByClassName('login-wrapper');
+      login[0].style.display="block";
+      console.log("WORKING")
+    }
+  </script>
+
+</body>
+<style>
+  .login-wrapper{
+  position: relative;
+  background-color: #353535;
+  margin-top: 150px;
+  top:20%;
+  left:30%;
+  /* z-index: 4; */
+  max-width: 430px;
+  width: 100%;
+  /* background: #fff; */
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  /* display: none; */
+}
+.login-wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+.login-wrapper form{
+  margin-top: 30px;
+}
+.login-wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.login-header{
+  display: flex;
+  flex-direction: row;
+}
+</style>
+</html>

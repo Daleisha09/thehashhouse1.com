@@ -1,0 +1,152 @@
+body{
+	margin:0;
+	color: black;
+	background-color: #333035;
+  }
+footer{
+	position: relative; 
+	background-color: white;
+	width: 100%;
+    bottom: 0; 
+    /* left: 0;  */
+    z-index: 10;
+}
+ /*Logo Style*/
+  .lgpic{
+	position: absolute; 
+	left: 10px; 
+	width: 10px;
+	z-index: 20;
+	
+  }
+
+  .lgsize{
+	height: 100px;
+	width: 100px;
+  }
+  
+  /*Home Page Styles*/
+  .home-info{
+	position: relative;
+	background-image: url("../images/IMG-20240311-WA0132.jpg");
+	background-position: center center;
+	background-size:cover ;
+	width:100vw;
+	height:700px;
+	color: white;
+  }
+  .home-info-title{
+	position: absolute;
+	top:40%;
+	right: 10%;
+	color: white;
+  }
+  .home-info-description{
+	position: absolute;
+	width: 40%;
+	top:50%;
+	right: 5%;
+  }
+  .options-container{
+	display:flex;
+	max-width: 100%;
+	flex-direction: row;
+	overflow: hidden;
+	width:100vw;
+	opacity: 1.0;
+  }
+
+  .options-container:hover{
+	opacity: 0.5;
+  }
+
+  .icap{
+	font-size: 10pt;
+	font-style: italic;
+	color: #efe9e9;
+  }
+
+  .option{
+	color: black;
+	width:33.33%;
+	/*border-left:solid black 1px;
+	border-bottom: solid black 1px;*/
+	text-align: center;
+  }
+  
+
+ /*Navigation Styles*/
+
+ .nav-wrapper{
+	position: fixed;
+	top: 0px !important;
+	height:100px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.5); 
+	z-index: 1;
+	overflow: hidden;
+  }
+  
+  .navbar{
+	display:flex; 
+	justify-content: center;
+	width:100%;
+  }
+
+  .navbar > ul {
+	display:flex;
+	gap: 20px;
+	list-style: none;
+	padding-left: 0px;
+  }
+  .navbar > ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+
+.pnav{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.pnav a:link{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.pnav a:visited{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.pnav a:hover{
+    color: black;
+    font-size: 22pt;
+    text-shadow: 1px 1px 2px #333035;
+    text-decoration: none;
+}
+
+/*Home Page Images*/
+.mainpics{
+	height: 200px;
+	width: 250px;
+	max-width: 250px;
+	border-radius: 10%;
+}
+
+/*Page Spacer*/
+.tspacer{
+	padding-top: 30px;
+}
+
+.bspacer{
+	padding-bottom: 20px;
+}
+
